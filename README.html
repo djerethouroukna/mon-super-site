@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - DJERET Portfolio</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%233498db'>D</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-code"></i>
+                    <span>DJERET Portfolio</span>
+                </a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> À propos</a></li>
+                <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-images"></i> Portfolio</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="max-width: 900px; margin: var(--spacing-xl) auto; padding: 0 var(--spacing-lg);">
+        <h1 style="margin-bottom: var(--spacing-lg);">📚 Documentation du Projet</h1>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>🎯 À Propos</h2>
+            <p>C'est un portfolio professionnel moderne et réactif pour un développeur web. Le site est construit avec une architecture modulaire et des bonnes pratiques de développement.</p>
+        </section>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>📁 Structure du Projet</h2>
+            <pre style="background: var(--background-light); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); overflow-x: auto;">
+mon-super-site/
+├── index.html              # Page d'accueil
+├── about.html              # Page À propos
+├── services.html           # Page Services & Tarifs
+├── portfolio.html          # Galerie de projets
+├── contact.html            # Formulaire de contact
+├── Apropos.html            # Alias pour about.html
+├── Contact.html            # Alias pour contact.html (majuscule)
+│
+├── css/
+│   ├── main.css            # Point d'entrée CSS
+│   ├── variables.css       # Variables et design system
+│   ├── reset.css           # Normalisation CSS
+│   ├── layout.css          # Système de grille et layout
+│   ├── header.css          # En-tête et navigation
+│   ├── footer.css          # Pied de page
+│   ├── components.css      # Composants réutilisables
+│   └── pages.css           # Styles spécifiques aux pages
+│
+├── js/
+│   ├── navigation.js       # Gestion du menu mobile
+│   ├── forms.js            # Validation et gestion des formulaires
+│   └── utils.js            # Fonctions utilitaires
+│
+└── assets/
+    └── images/             # Dossier pour les images
+            </pre>
+        </section>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>🎨 Système de Design</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--spacing-lg);">
+                <div style="background: var(--background-white); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);">
+                    <h3>Couleurs Principales</h3>
+                    <p><strong style="color: var(--primary-color);">Primary:</strong> #2c3e50</p>
+                    <p><strong style="color: var(--accent-color);">Accent:</strong> #3498db</p>
+                </div>
+                <div style="background: var(--background-white); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);">
+                    <h3>Typographie</h3>
+                    <p><strong>Police:</strong> Segoe UI, Arial</p>
+                    <p><strong>Icônes:</strong> Font Awesome 6.4</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>✨ Fonctionnalités</h2>
+            <ul style="list-style: none; margin-left: 0;">
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Design moderne et professionnel</li>
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Entièrement responsive (mobile-first)</li>
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Navigation fluide avec menu hamburger</li>
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Formulaire de contact avec validation</li>
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Système de grille CSS flexible</li>
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Animations fluides et transitions</li>
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Code bien organisé et documenté</li>
+                <li style="margin-bottom: var(--spacing-md);"><i class="fas fa-check text-success"></i> Performance optimisée</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>🚀 Comment Utiliser</h2>
+            <ol style="margin-left: var(--spacing-lg);">
+                <li>Ouvrez <code style="background: var(--background-light); padding: 2px 6px;">index.html</code> dans votre navigateur</li>
+                <li>Explorez les différentes pages via la navigation</li>
+                <li>Testez le formulaire de contact</li>
+                <li>Vérifiez la responsivité en redimensionnant la fenêtre</li>
+            </ol>
+        </section>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>📱 Breakpoints Responsive</h2>
+            <ul style="list-style: none; margin-left: 0;">
+                <li style="margin-bottom: var(--spacing-md);"><strong>Desktop:</strong> 1200px+</li>
+                <li style="margin-bottom: var(--spacing-md);"><strong>Tablet:</strong> 768px - 1199px</li>
+                <li style="margin-bottom: var(--spacing-md);"><strong>Mobile:</strong> Moins de 768px</li>
+                <li style="margin-bottom: var(--spacing-md);"><strong>Small Mobile:</strong> Moins de 480px</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>🔧 Personnalisation</h2>
+            <p>Pour personnaliser le design :</p>
+            <ol style="margin-left: var(--spacing-lg);">
+                <li>Modifiez les <strong>couleurs</strong> dans <code style="background: var(--background-light); padding: 2px 6px;">css/variables.css</code></li>
+                <li>Changez la <strong>typographie</strong> dans <code style="background: var(--background-light); padding: 2px 6px;">css/reset.css</code></li>
+                <li>Mettez à jour le <strong>contenu</strong> dans les fichiers HTML</li>
+                <li>Remplacez les <strong>images</strong> dans le dossier <code style="background: var(--background-light); padding: 2px 6px;">assets/images</code></li>
+            </ol>
+        </section>
+
+        <section style="margin-bottom: var(--spacing-xl);">
+            <h2>📞 Informations de Contact</h2>
+            <p>
+                <strong>Nom:</strong> DJERET HOUROUKNA INNOCENT<br>
+                <strong>Email:</strong> <a href="mailto:djerethouroukna@gmail.com">djerethouroukna@gmail.com</a><br>
+                <strong>Téléphone:</strong> <a href="tel:+23563205512">+235 63205512</a><br>
+                <strong>Localisation:</strong> N'Djamena, Tchad
+            </p>
+        </section>
+
+        <section style="background: var(--background-light); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); text-align: center;">
+            <p>&copy; 2025 DJERET HOUROUKNA INNOCENT. Tous droits réservés.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Je suis un développeur web créatif avec une passion pour créer des expériences numériques exceptionnelles.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Suivez-moi</h3>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 DJERET HOUROUKNA INNOCENT. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>

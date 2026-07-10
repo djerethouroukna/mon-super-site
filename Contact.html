@@ -3,37 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="contact.css">
+    <title>Contact - DJERET Portfolio</title>
     
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%233498db'>D</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .input-error {
+            border-color: var(--danger-color) !important;
+        }
+        .error-message {
+            color: var(--danger-color);
+            font-size: var(--font-size-sm);
+            display: block;
+            margin-top: 4px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
         <nav>
             <div class="logo">
-                <a href="#" style="color:#fff; font-size:20px; font-weight:bold;">Mon Dashboard</a>
+                <a href="index.html">
+                    <i class="fas fa-code"></i>
+                    <span>DJERET Portfolio</span>
+                </a>
             </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
             <ul>
-                <li><a href="Accueil.html"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="Apropos.html"><i class="fas fa-info-circle"></i> À propos</a></li>
-                <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> À propos</a></li>
+                <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-images"></i> Portfolio</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Contactez-moi</h1>
 
-        <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> Adresse : @@@@@@@@, N'Djamena, Tchad</p>
-            <p><i class="fas fa-phone"></i> Téléphone : +235 63205512</p>
-            <p><i class="fas fa-envelope"></i> Email : djerethouroukna@gmail.com</p>
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <h1>Me Contacter</h1>
+                <p>Parlons de votre projet ! Je serais ravi d'entendre vos idées.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="py-xl">
+            <div class="container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><strong>Localisation</strong></p>
+                        <p>N'Djamena, Tchad</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p><strong>Téléphone</strong></p>
+                        <p><a href="tel:+23563205512" style="color: var(--accent-color);">+235 63205512</a></p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><strong>Email</strong></p>
+                        <p><a href="mailto:djerethouroukna@gmail.com" style="color: var(--accent-color);">djerethouroukna@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form mt-xl">
+                    <h2 class="text-center mb-lg">Envoyez-moi un Message</h2>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Votre Nom *</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Votre Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="jean@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+235 ________">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Estimé (optionnel)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Sélectionnez une plage</option>
+                                <option value="< 500">Moins de $500</option>
+                                <option value="500 - 1000">$500 - $1000</option>
+                                <option value="1000 - 5000">$1000 - $5000</option>
+                                <option value="5000+">Plus de $5000</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Envoyer le Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL SECTION -->
+        <section class="py-xl bg-light text-center">
+            <div class="container">
+                <h2 class="mb-lg">Me Suivre sur les Réseaux</h2>
+                <div class="social-links" style="justify-content: center;">
+                    <a href="https://facebook.com" target="_blank" title="Facebook" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" title="GitHub" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="py-xl">
+            <div class="container container-md">
+                <h2 class="text-center mb-xl">Questions Fréquentes</h2>
+                
+                <div style="margin-bottom: var(--spacing-lg);">
+                    <div style="background: var(--background-white); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);">
+                        <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+                            Quel est votre délai de livraison ?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <p style="display: none; margin: var(--spacing-md) 0 0 0;">
+                            Les délais dépendent de la complexité du projet. Un site vitrine simple peut prendre 2-3 semaines, tandis qu'une application web complète peut prendre 2-3 mois.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: var(--spacing-lg);">
+                    <div style="background: var(--background-white); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);">
+                        <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+                            Proposez-vous de l'hébergement ?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <p style="display: none; margin: var(--spacing-md) 0 0 0;">
+                            Je peux vous aider à choisir un bon hébergement et configurer votre site. Je ne propose pas l'hébergement directement, mais je travaille avec les meilleurs fournisseurs.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: var(--spacing-lg);">
+                    <div style="background: var(--background-white); padding: var(--spacing-lg); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md);">
+                        <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+                            Offrez-vous la maintenance après le lancement ?
+                            <i class="fas fa-chevron-down"></i>
+                        </h3>
+                        <p style="display: none; margin: var(--spacing-md) 0 0 0;">
+                            Oui, je propose des forfaits de maintenance et support techniques. Nous pouvons discuter des options adaptées à vos besoins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Je suis un développeur web créatif avec une passion pour créer des expériences numériques exceptionnelles.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Suivez-moi</h3>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
         
-    </main>
-    <footer>
-        <p>&copy; 2025 DJERET HOUROUKNA INNOCENT.@@</p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DJERET HOUROUKNA INNOCENT. Tous droits réservés.</p>
+        </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/forms.js"></script>
 </body>
 </html>

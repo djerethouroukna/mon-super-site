@@ -1,0 +1,45 @@
+# Ignore les fichiers de configuration de l'OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore les dossiers node_modules et package-lock
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore les fichiers d'éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Ignore les fichiers de compilation
+dist/
+build/
+*.compiled.*
+
+# Ignore les fichiers temporaires
+*.log
+.env.local
+.env.*.local
+
+# Ignore les dossiers système
+.git/
+.cache/
+
+# Fichiers personnels à ignorer
+.old/
+_backup/
+temp/

@@ -1,0 +1,17 @@
+{
+  "name": "djeret-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel de DJERET HOUROUKNA INNOCENT",
+  "main": "index.html",
+  "author": "DJERET HOUROUKNA INNOCENT",
+  "license": "MIT",
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "designer",
+    "tchad"
+  ],
+  "scripts": {
+    "start": "Open index.html in your browser"
+  }
+}

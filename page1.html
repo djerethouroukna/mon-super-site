@@ -3,36 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <!-- Font Awesome pour les icônes -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- Styles internes pour simplifier -->
-	<link rel="stylesheet" href="page1.css">
-    <style>
-       
-    </style>
+    <title>Mon Portfolio Professionnel</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%233498db'>D</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- le style de header Dashboard -->
     <header>
         <nav>
             <div class="logo">
-                <a href="#" style="color:#fff; font-size:20px; font-weight:bold;">Mon Dashboard</a>
+                <a href="index.html">
+                    <i class="fas fa-code"></i>
+                    <span>DJERET Portfolio</span>
+                </a>
             </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
             <ul>
-                <li><a href="page1.html"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="Apropos.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="Apropos.html"><i class="fas fa-user"></i> À propos</a></li>
+                <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-images"></i> Portfolio</a></li>
                 <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Bienvenue dans mon site Bro</h1>
-        <p>Demande tout ce qui te préocupe nous somme dispo....</p>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenue sur mon Portfolio</h1>
+                <p>Je suis développeur web passionné par la création de solutions numériques innovantes</p>
+                <div class="mt-lg">
+                    <a href="Contact.html" class="btn btn-primary">Me Contacter</a>
+                    <a href="portfolio.html" class="btn btn-outline ml-md" style="margin-left: var(--spacing-md);">Voir Mon Travail</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl">
+            <div class="container">
+                <h2 class="text-center mb-xl">Mes Compétences</h2>
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Développement Web</h3>
+                        <p>HTML5, CSS3, JavaScript, React, Node.js</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design Moderne</h3>
+                        <p>UX/UI responsive, design system, prototypage</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Optimisation, SEO, accessibilité web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-primary text-center py-xl" style="color: white;">
+            <div class="container">
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projets Complétés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Clients Satisfaits</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Années d'Expérience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Qualité Garantie</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-light text-center">
+            <div class="container container-md">
+                <h2>Prêt à Démarrer un Projet ?</h2>
+                <p class="mb-lg">Contactez-moi pour discuter de vos besoins et vos objectifs.</p>
+                <a href="Contact.html" class="btn btn-primary btn-lg">Commençons</a>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 DJERET HOUROUKNA INNOCENT.@@</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Je suis un développeur web créatif avec une passion pour créer des expériences numériques exceptionnelles.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Apropos.html">À propos</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Suivez-moi</h3>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 DJERET HOUROUKNA INNOCENT. Tous droits réservés.</p>
+        </div>
     </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/utils.js"></script>
 </body>
 </html>

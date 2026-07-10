@@ -1,0 +1,68 @@
+/* ========================================
+   MAIN.CSS - Point d'entrée CSS
+   ======================================== */
+
+@import url('variables.css');
+@import url('reset.css');
+@import url('layout.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('components.css');
+@import url('pages.css');
+
+/* Utilitaires supplémentaires */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-primary { color: var(--accent-color); }
+.text-secondary { color: var(--text-light); }
+.text-danger { color: var(--danger-color); }
+.text-success { color: var(--success-color); }
+
+.bg-primary { background-color: var(--primary-color); }
+.bg-accent { background-color: var(--accent-color); }
+.bg-light { background-color: var(--background-light); }
+.bg-white { background-color: var(--background-white); }
+
+.rounded { border-radius: var(--border-radius-md); }
+.rounded-lg { border-radius: var(--border-radius-lg); }
+.rounded-full { border-radius: var(--border-radius-full); }
+
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+.hidden { display: none; }
+.visible { display: block; }
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
