@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - DJERET Portfolio</title>
+    <title>Services - DJERET </title>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%233498db'>D</text></svg>">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -171,7 +171,7 @@
                     <div class="card" style="border: 2px solid var(--border-color);">
                         <div class="card-header bg-light">
                             <h3 class="mb-sm">Starter</h3>
-                            <div class="stat-number">$299</div>
+                            <div class="stat-number">200000F CFA</div>
                             <p style="margin: 0; color: var(--text-light);">par projet</p>
                         </div>
                         <div class="card-body">
@@ -200,7 +200,7 @@
                         </div>
                         <div class="card-header bg-light">
                             <h3 class="mb-sm" style="margin-top: var(--spacing-lg);">Professional</h3>
-                            <div class="stat-number">$799</div>
+                            <div class="stat-number">550000F CFA</div>
                             <p style="margin: 0; color: var(--text-light);">par projet</p>
                         </div>
                         <div class="card-body">
@@ -229,7 +229,7 @@
                     <div class="card" style="border: 2px solid var(--border-color);">
                         <div class="card-header bg-light">
                             <h3 class="mb-sm">Enterprise</h3>
-                            <div class="stat-number">$1999+</div>
+                            <div class="stat-number">1300000F CFA</div>
                             <p style="margin: 0; color: var(--text-light);">Devis personnalisé</p>
                         </div>
                         <div class="card-body">
@@ -288,8 +288,11 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 DJERET HOUROUKNA INNOCENT. Tous droits réservés.</p>
-        </div>
+        <div class="container">© <span id="year"></span> Djeret Houroukna Innocent. Tous droits réservés.</div>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </div>
     </footer>
 
     <!-- Scripts -->
